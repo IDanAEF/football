@@ -24,25 +24,6 @@ const forms = () => {
     }
 
     try {
-        const formFiles = document.querySelectorAll('.form-file');
-
-        formFiles.forEach(fileField => {
-            const fileInput = fileField.querySelector('input'),
-                  fileName = fileField.querySelector('span');
-
-            fileInput.addEventListener('change', () => {
-                if (fileInput.files[0]) {
-                    let name = fileInput.files[0].name;
-
-                    fileName.textContent = name.length <= 50 ? name : (name.slice(0, 50) + '...');
-                }
-            });
-        });
-    } catch (e) {
-        console.log(e.stack);
-    }
-
-    try {
         const formAjax = document.querySelectorAll('form.form'),
               modal = document.querySelector('.modal'),
               modalSuccess = document.querySelector('.modal__success'),

@@ -145,66 +145,6 @@ const other = () => {
     } catch (e) {
         console.log(e.stack);
     }
-
-    try {
-        Fancybox.bind("[data-fancybox]");
-
-        const iframeUsage = document.querySelectorAll('a[data-iframe-usage]');
-
-        iframeUsage.forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-
-                new Fancybox([
-                    {
-                        type: 'html',
-                        src: '<iframe src="'+item.href+'" class="framed-video" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
-                    }
-                ]);
-            });
-        });
-    } catch (e) {
-        console.log(e.stack);
-    }
-
-    try {
-        const aboutImages = document.querySelectorAll('.home__about-images img'),
-              aboutTabs = document.querySelectorAll('.home__about-tabs span');
-        
-        const setImage = (i = 0) => {
-            aboutImages.forEach(item => item.classList.remove('active'));
-            aboutTabs.forEach(item => item.classList.remove('active'));
-
-            aboutImages[i].classList.add('active');
-            aboutTabs[i].classList.add('active');
-        }
-
-        setImage();
-
-        aboutTabs.forEach((tab, i) => {
-            tab.addEventListener('click', () => setImage(i));
-        });
-    } catch (e) {
-        console.log(e.stack);
-    }
-
-    try {
-        const projectsMenu = document.querySelectorAll('.header__nav-menu'),
-              projectsMenuBtn = document.querySelectorAll('.header__nav a.open-menu');
-
-        if (projectsMenu && projectsMenuBtn) {
-            projectsMenuBtn.forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-
-                    btn.classList.toggle('active');
-                    btn.nextElementSibling.classList.toggle('active');
-                });
-            });
-        }
-    } catch (e) {
-        console.log(e.stack);
-    }
 }
 
 export default other;

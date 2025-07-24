@@ -29,7 +29,7 @@ const slider = () => {
                 sliderNums.querySelector('.count').textContent = slidesCount;
             }
 
-            if (slidesCount < 1) sliderArrows.style.display = 'none';
+            if (slidesCount < 1 && sliderArrows) sliderArrows.style.display = 'none';
 
             if (sliderDots) {
                 sliderDots.innerHTML = '';

@@ -16,10 +16,10 @@ body
     display: flex
     flex-direction: column
     line-height: 1.3
-    font-size: 14px
-    font-weight: 300
-    background: $gray
-    font-family: 'Helvetica', sans-serif
+    font-family: 'Mulish', sans-serif
+    background: $black
+    font-size: 21px
+    font-weight: 600
 a 
     color: inherit
     text-decoration: none
@@ -38,31 +38,13 @@ html, body
     flex-direction: column
     flex: 1
     position: relative
-    &::before, &::after
-        content: ''
-    &::before, &::after, .page-line
-        top: 0
-        width: 1px
-        height: 100%
-        position: absolute
-        z-index: -1
-        background: rgba(255, 255, 255, 0.14)
-    &::before
-        left: 34px
-    &::after
-        right: 34px
-    .page-line
-        &.left 
-            left: calc(25% - 1px)
-        &.middle
-            left: calc(50% - 1px)
-        &.right
-            left: calc(75% - 1px)
+    padding-top: 40px
 footer
     margin-top: auto
 main 
     position: relative
     flex: 1
+    z-index: 1
 img, svg 
     max-width: 100%
     max-height: 100%
@@ -76,8 +58,8 @@ picture
     margin: 0 auto
     width: 100%
     max-width: 1920px
-    padding-right: 50px
-    padding-left: 50px
+    padding-right: 4.16vw
+    padding-left: 4.16vw
 .img
     &_bg
         position: absolute
@@ -89,27 +71,6 @@ picture
         transform: translate(-50%, -50%)
         z-index: 0
         pointer-events: none
-h1, h2, h3, h4, h5, h6
-    font-weight: 300
-    text-transform: uppercase
-h1
-    word-break: break-word
-    margin: 0
-    font-size: 48px
-    letter-spacing: 0.04em
-h2
-    font-size: 40px
-    letter-spacing: 0.04em
-h3 
-    font-size: 32px
-    letter-spacing: 0.04em
-h4 
-    font-size: 24px
-    letter-spacing: 0.1em
-h5 
-    font-size: 20px
-h6
-    font-size: 18px
 .default-text
     h2, h3, h4, h5, h6, p, table, ul, ol
         &:last-child
@@ -135,38 +96,32 @@ h6
         td 
             border: 1px solid $white
             padding: 10px
-    ol 
+    ol, ul 
         margin: 20px 0px
         padding-left: 1em
-    ul 
-        margin: 20px 0px
-        list-style-type: none
-        li 
-            margin-bottom: 10px
-            position: relative
-            padding-left: 25px
-            &:last-child
-                margin-bottom: 0 !important
-            &::before
-                content: ''
-                position: absolute
-                left: 0
-                top: 5px
-                width: 8px
-                height: 8px
-                background: $color
-                border-radius: 100% 
     a 
         text-decoration: underline
-.default-text.ul-white
-    ul 
-        li 
-            &::before
-                background: $white
 .text_black
     table
         td 
             border: 1px solid $black
+h1, h2, h3, h4, h5, h6 
+    font-weight: 900
+    font-family: 'Tablon', 'Mulish', sans-serif
+    margin: 0
+h1, h2
+    font-size: 72px
+    line-height: 1
+h3
+    font-size: 48px
+    line-height: 1
+h4 
+    font-size: 32px
+    line-height: 1
+h5 
+    font-size: 24px
+h6 
+    font-size: 21px
 .text 
     &_normal
         font-style: normal
@@ -213,33 +168,27 @@ h6
             font-weight: 800
         &900
             font-weight: 900
-    &_ff 
-        &Helv
-            font-family: 'Helvetica', sans-serif
-        &Onest
-            font-family: 'Onest', 'Helvetica', sans-serif
+    &_ff
+        &Mulish 
+            font-family: 'Mulish', sans-serif
+        &Tablon
+            font-family: 'Tablon', 'Mulish', sans-serif
     &_fz 
-        &12
-            font-size: 12px
-        &14
-            font-size: 14px
         &16
             font-size: 16px
-        &18
-            font-size: 18px
-        &20
-            font-size: 20px
+        &21
+            font-size: 21px
         &24
             font-size: 24px
         &32
             font-size: 32px
-            letter-spacing: 0.04em
-        &40
-            font-size: 40px
-            letter-spacing: 0.04em
+            line-height: 1
         &48
             font-size: 48px
-            letter-spacing: 0.04em
+            line-height: 1
+        &72
+            font-size: 72px
+            line-height: 1
 .elem
     &_animate 
         transition: 1.4s all
@@ -277,111 +226,6 @@ h6
             transform: none
             &.anim 
                 transform: none
-.fancybox__content
-    padding: 0 !important
-    .framed-video
-        width: 900px
-        height: auto
-        max-width: 94vw
-        aspect-ratio: 1.77778 / 1
-.btn 
-    position: relative
-    display: flex
-    align-items: center
-    justify-content: center
-    width: fit-content
-    padding: 10px 20px
-    border: none
-    outline: none
-    font-size: 12px
-    text-transform: uppercase
-    color: $white !important
-    background: $color
-    transition: 0.4s all
-    gap: 10px
-    cursor: pointer
-    font-family: 'Onest', 'Helvetica', sans-serif
-    img 
-        width: 13px
-        min-width: 13px
-    &:hover, &.active
-        background: $colorActive
-    &.big 
-        padding: 20px 30px
-.circle-blur
-    position: absolute
-    border-radius: 100%
-    filter: blur(250px)
-    width: 26.04vw
-    height: 26.04vw
-    max-width: 500px
-    max-height: 500px
-    background: $color
-    transform: translate3d(0, 0, 0)
-    pointer-events: none
-.form
-    width: 460px
-    max-width: 100%
-    padding: 30px
-    backdrop-filter: blur(20px)
-    background: rgba(43, 43, 45, 0.5)
-    transform: translate3d(0, 0, 0)
-    border: 1px solid rgba(255, 255, 255, 0.14)
-    position: relative
-    &-btn 
-        display: flex
-        gap: 3px
-        .btn 
-            flex: 1
-        &-right 
-            width: 78px
-            height: 78px
-            display: flex
-            align-items: center
-            justify-content: center
-            background: $color
-            img 
-                width: 14px
-    &-head 
-        margin-bottom: 32px
-        letter-spacing: 0.04em
-    &-block 
-        margin-bottom: 23px
-        &:last-child
-            margin-bottom: 0 !important
-    &-label 
-        display: flex
-        margin-bottom: 6px
-        &:last-child
-            margin-bottom: 0 !important
-        input
-            padding: 22px 31px
-            background: #fff
-            border: none
-            width: 100%
-            outline-color: $color
-    &-privacy 
-        display: flex
-        align-items: center
-        gap: 10px
-        img 
-            width: 24px
-            min-width: 24px
-    &-file 
-        display: flex
-        align-items: center
-        gap: 20px
-        justify-content: space-between
-        cursor: pointer
-        &-right 
-            opacity: 0.5
-        &-left 
-            display: flex
-            align-items: center
-            gap: 20px
-            img 
-                width: 56px
-                min-width: 56px
 .slider
     &-list
         user-select: none
@@ -399,17 +243,45 @@ h6
         &.fast 
             transition: none
             pointer-events: none
-    &-arrows
+    &-arrows 
         display: flex
         align-items: center
-        width: fit-content
+        gap: 20px
         &-item 
-            width: 70px
-            min-width: 70px
+            width: 64px
+            height: 64px
+            max-width: unset
+            max-height: unset
+            min-width: 64px
             cursor: pointer
-            transition: 0.4s filter
-            filter: brightness(0) invert(1)
-            &:hover 
-                filter: none !important
-            &.left
-                transform: rotate(180deg)
+.btn
+    position: relative
+    border: none
+    background: none
+    cursor: pointer
+    width: 100%
+    outline: none
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    padding: 34px
+    font-family: 'Tablon', 'Mulish', sans-serif
+    font-weight: 900
+    text-transform: uppercase
+    color: $white !important
+    span
+        position: relative
+        z-index: 1
+    img 
+        position: absolute
+        left: 50%
+        transform: translate(-50%, 10%)
+        bottom: 0
+        width: 102%
+        height: 155%
+        max-width: unset
+        max-height: unset
+        pointer-events: none
+        object-fit: fill
+        z-index: 0
