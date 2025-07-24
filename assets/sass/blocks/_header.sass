@@ -1,0 +1,206 @@
+.header
+    padding: 20px 0px 35px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14)
+    backdrop-filter: blur(24px)
+    background: linear-gradient(168deg, rgba(49, 52, 59, 0.4) 0%, rgba(43, 43, 43, 0.4) 100%)
+    transform: translate3d(0, 0, 0)
+    z-index: 10
+    &__bottom
+        position: absolute
+        top: 100%
+        left: 0
+        width: 100%
+        padding: 4px 15px
+        background: $color
+        display: none
+        align-items: center
+        justify-content: space-between
+        gap: 20px
+        backdrop-filter: blur(20px)
+        background: #4549bd
+        transform: translate3d(0, 0, 0)
+        .header
+            &__phone
+                color: $white
+                display: flex !important
+                margin-left: 0 !important
+    &__switch
+        display: flex
+        align-items: center
+        gap: 6px
+        border-radius: 20px
+        img 
+            width: 30px
+            min-width: 30px
+        &.night
+            background: #393a68
+            padding-right: 16px
+        &.day 
+            background: $white
+            padding-left: 16px
+    &__burger
+        display: none
+        width: 35px
+        height: 35px
+        position: relative
+        margin-left: 20px
+        cursor: pointer
+        img 
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            transition: 0.4s opacity
+            pointer-events: none
+            &.close 
+                opacity: 0
+        &.active
+            img 
+                &.open
+                    opacity: 0
+                &.close
+                    opacity: 1
+    &__wrap
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        gap: 20px
+    &__logo, &__right, &__links, &__info
+        display: flex
+        align-items: center
+    &__logo 
+        align-items: flex-end
+        gap: 40px
+        img 
+            width: 154px
+            min-width: 154px
+        &-name 
+            display: block
+            margin-bottom: 8px
+    &__right 
+        gap: 45px
+    &__phone, &__links .btn
+        margin-left: 20px
+    &__info 
+        gap: 35px
+    &__nav 
+        position: relative
+        z-index: 10
+        ul 
+            list-style-type: none
+            display: flex
+            li 
+                & > a 
+                    height: 100%
+                    display: flex
+                    align-items: center
+                    gap: 5px
+                    border: 1px solid rgba(255, 255, 255, 0.14)
+                    padding: 34px 32px
+                    color: $white !important
+                    backdrop-filter: blur(24px)
+                    background: rgba(43, 43, 45, 0.5)
+                    img 
+                        width: 24px
+                        min-width: 24px
+                    &:hover, &.active
+                        background: $color !important
+        &-menu 
+            position: absolute
+            left: 0
+            top: 0
+            padding: 140px 280px 50px 40px
+            width: 100%
+            z-index: -1
+            overflow: auto
+            backdrop-filter: blur(24px)
+            background: linear-gradient(168deg, rgba(49, 52, 59, 0.4) 0%, rgba(43, 43, 43, 0.4) 100%)
+            transform: translate3d(0, 0, 0)
+            height: 0
+            opacity: 0
+            visibility: hidden
+            overflow: auto
+            transition: 0.5s all
+            &.active 
+                height: 785px
+                opacity: 1
+                visibility: visible
+            &-item 
+                display: block
+                margin-bottom: 60px
+                text-transform: none
+                position: relative
+                strong
+                    border-bottom: 1px dashed $white
+                    position: relative
+                    z-index: 2
+                span 
+                    display: block
+                    opacity: 0.7
+                    position: relative
+                    z-index: 2
+                img 
+                    position: absolute
+                    top: 50%
+                    right: 0
+                    width: 150px
+                    height: 150px
+                    max-width: unset
+                    max-height: unset
+                    transform: translateY(-50%) rotate(8deg)
+                    transition: 0.4s all
+                    opacity: 0
+                    visibility: hidden
+                &:hover
+                    img
+                        opacity: 1
+                        visibility: visible
+                &:last-child
+                    margin-bottom: 0 !important
+    &__links 
+        &-item 
+            display: flex
+            width: 32px
+            min-width: 32px
+            img 
+                width: 100%
+    &__mobile 
+        position: fixed
+        z-index: 11
+        top: 98px
+        right: 0
+        width: 400px
+        height: calc(100% - 98px)
+        background: linear-gradient(0deg, rgba(81, 86, 251, 0.3) 0%, $gray 50%), $gray
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        padding: 0 5px 10px
+        overflow: auto
+        opacity: 0
+        transform: translateX(100%)
+        visibility: hidden
+        transition: 0.5s all
+        &.active 
+            visibility: visible
+            transform: translateX(0)
+            opacity: 1
+        .btn 
+            margin-top: 32px
+        .header
+            &__nav 
+                display: block
+                width: 100%
+                margin-bottom: 32px
+                ul 
+                    flex-direction: column
+                    width: 100%
+                    li 
+                        width: 100%
+                        & > a 
+                            justify-content: center
+            &__info 
+                &-item 
+                    display: block
