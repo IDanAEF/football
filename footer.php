@@ -1,6 +1,6 @@
         <footer class="footer">
             <div class="container">
-                <span>© Copyright 2025. Все права защищены</span>
+                <span>© Copyright <?=date('Y')?>. Все права защищены</span>
                 <nav class="footer__nav">
                     <ul>
                         <li>

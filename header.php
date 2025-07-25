@@ -21,7 +21,12 @@
         <header class="header">
             <div class="container">
                 <div class="header__wrap text_fz32 text_fw900 text_ffTablon">
-                    <img src="<?=IMAGES?>header-back.png" alt="header-back" class="back">
+                    <picture>
+                        <source srcset="<?=IMAGES?>header-back-mob2.png" media="(max-width: 370px)">
+                        <source srcset="<?=IMAGES?>header-back-mob.png" media="(max-width: 576px)">
+                        <img src="<?=IMAGES?>header-back.png" alt="header-back" class="back">
+                    </picture>
+                    <img src="<?=IMAGES?>icons/menu.svg" alt="Меню" class="header__burger">
                     <nav class="header__nav text_upper">
                         <ul>
                             <li>
@@ -44,5 +49,36 @@
                         </a>
                     </div>
                 </div>
+            </div>
+            <div class="header__mobile">
+                <img src="<?=IMAGES?>icons/close.svg" alt="close" class="header__mobile-close">
+                <div class="page__title text_fz72 text_ffTablon text_fw900 text_center">
+                    МЕНЮ
+                </div>
+                <nav class="header__mobile-nav text_fz48 text_ffTablon text_fw900 text_upper">
+                    <ul>
+                        <li>
+                            <a href="/news/">новости</a>
+                        </li>
+                        <li>
+                            <a href="/schedule/">расписание</a>
+                        </li>
+                        <li>
+                            <a href="/rules/">правила и условия</a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                                <img src="<?=IMAGES?>icons/twitch.svg" alt="twitch">
+                                twitch
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">
+                                <img src="<?=IMAGES?>icons/youtube.svg" alt="youtube">
+                                youtube
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>

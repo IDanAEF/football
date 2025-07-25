@@ -206,7 +206,7 @@
     <section class="home__news page__block">
         <div class="container">
             <h2 class="page__title">новости</h2>
-            <div class="home__news-slider slider" data-tv-vis="3" data-lap-vis="2">
+            <div class="home__news-slider slider" data-tv-vis="3" data-lap-vis="2" data-stablet-vis="1">
                 <div class="slider-arrows">
                     <img src="<?=IMAGES?>icons/arrow-slider-left.svg" alt="arrow-slider" class="slider-arrows-item left">
                     <img src="<?=IMAGES?>icons/arrow-slider.svg" alt="arrow-slider" class="slider-arrows-item right">
