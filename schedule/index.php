@@ -3,6 +3,156 @@
     <section class="home__schedule page__block">
         <div class="container">
             <h1 class="page__title">расписание</h1>
+            <div class="schedule__filter">
+                <div class="schedule__filter-item">
+                    <div class="name text_fz24 text_ffTablon date">
+                        <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
+                        <input type="text" placeholder="дата" class="datepicker-simple" readonly>
+                        <img src="<?=IMAGES?>icons/date.svg" alt="date-icon" class="date-icon">
+                    </div>
+                </div>
+                <div class="schedule__filter-item">
+                    <div class="name text_fz24 text_ffTablon body-click-target">
+                        <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
+                        <span>Лига</span>
+                        <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
+                    </div>
+                    <div class="list text_fz16 body-click-content">
+                        <span>
+                            Национальная лига
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span class="active">
+                            Лига Чемпионов
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span class="active">
+                            Кубок Америки
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span>
+                            Чемпионат Мира
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                    </div>
+                </div>
+                <div class="schedule__filter-item">
+                    <div class="name text_fz24 text_ffTablon body-click-target">
+                        <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
+                        <span>Лига</span>
+                        <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
+                    </div>
+                    <div class="list text_fz16 body-click-content">
+                        <span>
+                            Национальная лига
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span class="active">
+                            Лига Чемпионов
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span class="active">
+                            Кубок Америки
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span>
+                            Чемпионат Мира
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                    </div>
+                </div>
+                <div class="schedule__filter-item">
+                    <div class="name text_fz24 text_ffTablon body-click-target">
+                        <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
+                        <span>Этап</span>
+                        <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
+                    </div>
+                    <div class="list text_fz16 body-click-content">
+                        <span>
+                            Этап
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span class="active">
+                            Этап
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span class="active">
+                            Этап
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span>
+                            Этап
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                    </div>
+                </div>
+                <div class="schedule__filter-item">
+                    <div class="name text_fz24 text_ffTablon body-click-target">
+                        <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
+                        <span>команда</span>
+                        <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
+                    </div>
+                    <div class="list text_fz16 body-click-content">
+                        <div class="schedule__filter-search">
+                            <img src="<?=IMAGES?>icons/loop.svg" alt="loop">
+                            <input type="text" placeholder="Поиск" class="text_fz16">
+                        </div>
+                        <span class="active">
+                            Arsenal
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span>
+                            Atletico
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span>
+                            Bayern
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span>
+                            Chelsea
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span class="active">
+                            Arsenal1
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span>
+                            Atletico1
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span>
+                            Bayern1
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span>
+                            Chelsea1
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                    </div>
+                </div>
+                <div class="schedule__filter-item">
+                    <div class="name text_fz24 text_ffTablon body-click-target">
+                        <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
+                        <span>статус</span>
+                        <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
+                    </div>
+                    <div class="list text_fz16 body-click-content">
+                        <span class="active">
+                            Завершён
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span>
+                            Идёт
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                        <span>
+                            Ожидается
+                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                        </span>
+                    </div>
+                </div>
+            </div>
             <div class="home__schedule-table">
                 <div class="home__schedule-row">
                     <span class="date">
@@ -118,7 +268,7 @@
                             <img src="<?=IMAGES?>icons/football-icon.svg" alt="Germany">
                             <span>Germany</span>
                         </div>
-                        <div class="teams-result text_fz32">—:—</div>
+                        <div class="teams-result text_fz32">—:-</div>
                         <div class="teams-item">
                             <img src="<?=IMAGES?>icons/football-icon.svg" alt="Argentina">
                             <span>Argentina</span>
@@ -130,6 +280,10 @@
                     </div>
                 </div>
             </div>
+            <button class="btn text_fz32">
+                <span>показать ещё</span>
+                <img src="<?=IMAGES?>btn-back-black.png" alt="btn-back">
+            </button>
         </div>
     </section>
 </main>

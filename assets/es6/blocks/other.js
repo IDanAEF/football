@@ -145,6 +145,44 @@ const other = () => {
     } catch (e) {
         console.log(e.stack);
     }
+
+    try {
+        const scheduleFilter = document.querySelectorAll('.schedule__filter-search');
+
+        scheduleFilter.forEach(filter => {
+            const filterList = filter.parentElement.querySelectorAll('span'),
+                  filterInput = filter.querySelector('input');
+
+            filterInput.addEventListener('input', () => {
+                let inputValue = filterInput.value.trim();
+
+                filterList.forEach(listItem => {
+                    if (inputValue && listItem.textContent.trim().indexOf(inputValue) == -1)
+                        listItem.style.display = 'none';
+                    else listItem.style.display = '';
+                });
+            });
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
+
+    try {
+        const datepicks = document.querySelectorAll('.datepicker-simple');
+
+        datepicks.forEach((datepick, i) => {
+            let pickId = 'datepick'+i;
+
+            if (!datepick.classList.contains('date-setted')) {
+                datepick.id = pickId;
+                datepick.classList.add('date-setted');
+
+                new AirDatepicker('#'+pickId);
+            }
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
 }
 
 export default other;
