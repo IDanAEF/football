@@ -14,26 +14,18 @@
                 <div class="schedule__filter-item">
                     <div class="name text_fz24 text_ffTablon body-click-target">
                         <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
-                        <span>Лига</span>
+                        <span>время</span>
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
                     <div class="list text_fz16 body-click-content">
-                        <span>
-                            Национальная лига
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
-                        </span>
-                        <span class="active">
-                            Лига Чемпионов
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
-                        </span>
-                        <span class="active">
-                            Кубок Америки
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
-                        </span>
-                        <span>
-                            Чемпионат Мира
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
-                        </span>
+                        <div class="input-field">
+                            <img src="<?=IMAGES?>icons/loop.svg" alt="loop">
+                            <input type="text" placeholder="От" class="text_fz16">
+                        </div>
+                        <div class="input-field">
+                            <img src="<?=IMAGES?>icons/loop.svg" alt="loop">
+                            <input type="text" placeholder="До" class="text_fz16">
+                        </div>
                     </div>
                 </div>
                 <div class="schedule__filter-item">
@@ -93,7 +85,7 @@
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
                     <div class="list text_fz16 body-click-content">
-                        <div class="schedule__filter-search">
+                        <div class="input-field schedule__filter-search">
                             <img src="<?=IMAGES?>icons/loop.svg" alt="loop">
                             <input type="text" placeholder="Поиск" class="text_fz16">
                         </div>

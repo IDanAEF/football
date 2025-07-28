@@ -168,6 +168,25 @@ const other = () => {
     }
 
     try {
+        const filterLists = document.querySelectorAll('.schedule__filter-item .list');
+
+        filterLists.forEach(list => {
+            const listItems = list.querySelectorAll('span'),
+                  listName = list.previousElementSibling;
+
+            listItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                    listName.classList.remove('active');
+                    list.classList.remove('active');
+                });
+            });
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
+
+    try {
         const datepicks = document.querySelectorAll('.datepicker-simple');
 
         datepicks.forEach((datepick, i) => {

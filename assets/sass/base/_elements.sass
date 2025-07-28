@@ -285,3 +285,32 @@ h6
         pointer-events: none
         object-fit: fill
         z-index: 0
+.air-datepicker
+    background: $black
+    border: 1px solid $violet
+    border-radius: 0
+    font-size: 16px
+    color: $white
+    &-nav 
+        border-bottom: none
+        &--title 
+            border-radius: 0
+            &:hover 
+                background: rgb(6, 40, 41)
+    &-body 
+        &--day 
+            &-name 
+                font-size: 14px
+                color: $violet
+    &-cell
+        border-radius: 0
+        &.-focus-
+            background: rgb(6, 40, 41)
+        &.-current-
+            color: $color !important
+        &.-day-
+            &.-other-month-
+                color: $gray
+        &.-year-
+            &.-other-decade
+                color: $gray

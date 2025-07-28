@@ -5,27 +5,27 @@
         align-items: center
         gap: 15px
         margin-bottom: 40px
-        &-search
-            position: relative
-            img 
-                position: absolute
-                width: 24px
-                pointer-events: none
-                left: 16px
-                top: 50%
-                transform: translateY(-50%)
-            input 
-                padding: 18px 16px 18px 48px
-                background: none
-                outline: none
-                border: none
-                border-bottom: 1px solid $blue
-                width: 100%
-                font-weight: 600
-                color: $white
         &-item
             width: 277px
             position: relative
+            .input-field
+                position: relative
+                img 
+                    position: absolute
+                    width: 24px
+                    pointer-events: none
+                    left: 16px
+                    top: 50%
+                    transform: translateY(-50%)
+                input 
+                    padding: 18px 16px 18px 48px
+                    background: none
+                    outline: none
+                    border: none
+                    border-bottom: 1px solid $blue
+                    width: 100%
+                    font-weight: 600
+                    color: $white
             .list 
                 position: absolute
                 left: 0
