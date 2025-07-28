@@ -189,6 +189,9 @@ h6
         &72
             font-size: 72px
             line-height: 1
+        &400
+            font-size: 400px
+            line-height: 1
 .elem
     &_animate 
         transition: 1.4s all
@@ -291,8 +294,18 @@ h6
     border-radius: 0
     font-size: 16px
     color: $white
+    &--pointer
+        &:after
+            border-top: 1px solid $violet
+            border-right: 1px solid $violet
+            border-radius: 0
+            background: $black
     &-nav 
         border-bottom: none
+        &--action
+            border-radius: 0
+            &:hover 
+                background: rgb(6, 40, 41)
         &--title 
             border-radius: 0
             &:hover 
@@ -308,9 +321,17 @@ h6
             background: rgb(6, 40, 41)
         &.-current-
             color: $color !important
+        &.-selected-
+            background: $violet !important
+            color: $white !important
         &.-day-
             &.-other-month-
                 color: $gray
         &.-year-
             &.-other-decade
                 color: $gray
+    &-time 
+        &--current
+            &-hours, &-minutes
+                &:after
+                    background: rgb(6, 40, 41)

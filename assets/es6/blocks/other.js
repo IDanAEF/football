@@ -36,7 +36,7 @@ const other = () => {
                     e.target.parentElement.classList.remove('active');
 
                 !e.target.classList.contains('not-active') ? e.target.classList.toggle('active') : '';
-            } else if (!e.target.closest('.body-click-content')) {
+            } else if (!e.target.closest('.body-click-content') && !e.target.closest('.air-datepicker')) {
                 bodyClickContent.forEach(item => !item.classList.contains('not-global') ? item.classList.remove('active') : '');
                 bodyClickTarget.forEach(item => !item.classList.contains('not-active') && !item.classList.contains('not-global') ? item.classList.remove('active') : '');
             }
@@ -196,7 +196,12 @@ const other = () => {
                 datepick.id = pickId;
                 datepick.classList.add('date-setted');
 
-                new AirDatepicker('#'+pickId);
+                if (datepick.classList.contains('only-time'))
+                    new AirDatepicker('#'+pickId, {
+                        timepicker: true,
+                        onlyTimepicker: true,
+                    });
+                else new AirDatepicker('#'+pickId);
             }
         });
     } catch (e) {

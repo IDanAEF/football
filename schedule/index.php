@@ -12,29 +12,29 @@
                     </div>
                 </div>
                 <div class="schedule__filter-item">
-                    <div class="name text_fz24 text_ffTablon body-click-target">
+                    <div class="name text_fz24 text_ffTablon body-click-target global-hide">
                         <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
                         <span>время</span>
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
-                    <div class="list text_fz16 body-click-content">
+                    <div class="list text_fz16 body-click-content global-hide">
                         <div class="input-field">
                             <img src="<?=IMAGES?>icons/loop.svg" alt="loop">
-                            <input type="text" placeholder="От" class="text_fz16">
+                            <input type="text" placeholder="От __:__" class="text_fz16 datepicker-simple only-time" readonly>
                         </div>
                         <div class="input-field">
                             <img src="<?=IMAGES?>icons/loop.svg" alt="loop">
-                            <input type="text" placeholder="До" class="text_fz16">
+                            <input type="text" placeholder="До __:__" class="text_fz16 datepicker-simple only-time" readonly>
                         </div>
                     </div>
                 </div>
                 <div class="schedule__filter-item">
-                    <div class="name text_fz24 text_ffTablon body-click-target">
+                    <div class="name text_fz24 text_ffTablon body-click-target global-hide">
                         <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
                         <span>Лига</span>
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
-                    <div class="list text_fz16 body-click-content">
+                    <div class="list text_fz16 body-click-content global-hide">
                         <span>
                             Национальная лига
                             <img src="<?=IMAGES?>icons/check.svg" alt="check">
@@ -54,12 +54,12 @@
                     </div>
                 </div>
                 <div class="schedule__filter-item">
-                    <div class="name text_fz24 text_ffTablon body-click-target">
+                    <div class="name text_fz24 text_ffTablon body-click-target global-hide">
                         <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
                         <span>Этап</span>
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
-                    <div class="list text_fz16 body-click-content">
+                    <div class="list text_fz16 body-click-content global-hide">
                         <span>
                             Этап
                             <img src="<?=IMAGES?>icons/check.svg" alt="check">
@@ -79,12 +79,12 @@
                     </div>
                 </div>
                 <div class="schedule__filter-item">
-                    <div class="name text_fz24 text_ffTablon body-click-target">
+                    <div class="name text_fz24 text_ffTablon body-click-target global-hide">
                         <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
                         <span>команда</span>
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
-                    <div class="list text_fz16 body-click-content">
+                    <div class="list text_fz16 body-click-content global-hide">
                         <div class="input-field schedule__filter-search">
                             <img src="<?=IMAGES?>icons/loop.svg" alt="loop">
                             <input type="text" placeholder="Поиск" class="text_fz16">
@@ -124,12 +124,12 @@
                     </div>
                 </div>
                 <div class="schedule__filter-item">
-                    <div class="name text_fz24 text_ffTablon body-click-target">
+                    <div class="name text_fz24 text_ffTablon body-click-target global-hide">
                         <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
                         <span>статус</span>
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
-                    <div class="list text_fz16 body-click-content">
+                    <div class="list text_fz16 body-click-content global-hide">
                         <span class="active">
                             Завершён
                             <img src="<?=IMAGES?>icons/check.svg" alt="check">

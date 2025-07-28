@@ -203,7 +203,7 @@
             </a>
         </div>
     </section>
-    <section class="home__news page__block">
+    <section class="home__news page__block" id="news">
         <div class="container">
             <h2 class="page__title">новости</h2>
             <div class="home__news-slider slider" data-tv-vis="3" data-lap-vis="2" data-stablet-vis="1">

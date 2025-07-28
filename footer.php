@@ -4,7 +4,7 @@
                 <nav class="footer__nav">
                     <ul>
                         <li>
-                            <a href="/news/">Новости</a>
+                            <a href="/#news">Новости</a>
                         </li>
                         <li>
                             <a href="/schedule/">Расписание</a>
@@ -24,6 +24,9 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div class="page__loading">
+        <img src="<?=IMAGES?>icons/loading.svg" alt="loading">
     </div>
     <script src="/assets/js/air-datepicker.js"></script>
     <script src="/assets/js/script.js"></script>

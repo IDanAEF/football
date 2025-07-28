@@ -31,7 +31,7 @@
                     <nav class="header__nav text_upper">
                         <ul>
                             <li>
-                                <a href="/news/" class="no-hover<?=CLEAR_PATH == '/news/' ? ' active' : ''?>">новости</a>
+                                <a href="/#news" class="no-hover">новости</a>
                             </li>
                             <li>
                                 <a href="/schedule/" class="no-hover<?=CLEAR_PATH == '/schedule/' ? ' active' : ''?>">расписание</a>
@@ -59,7 +59,7 @@
                 <nav class="header__mobile-nav text_fz48 text_ffTablon text_fw900 text_upper">
                     <ul>
                         <li>
-                            <a href="/news/">новости</a>
+                            <a href="/#news">новости</a>
                         </li>
                         <li>
                             <a href="/schedule/">расписание</a>
