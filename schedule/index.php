@@ -36,45 +36,28 @@
                     </div>
                     <div class="list text_fz16 body-click-content global-hide">
                         <span>
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Национальная лига
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span class="active">
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Лига Чемпионов
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span class="active">
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Кубок Америки
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span>
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Чемпионат Мира
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
-                        </span>
-                    </div>
-                </div>
-                <div class="schedule__filter-item">
-                    <div class="name text_fz24 text_ffTablon body-click-target global-hide">
-                        <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
-                        <span>Этап</span>
-                        <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
-                    </div>
-                    <div class="list text_fz16 body-click-content global-hide">
-                        <span>
-                            Этап
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
-                        </span>
-                        <span class="active">
-                            Этап
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
-                        </span>
-                        <span class="active">
-                            Этап
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
-                        </span>
-                        <span>
-                            Этап
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                     </div>
                 </div>
@@ -90,36 +73,52 @@
                             <input type="text" placeholder="Поиск" class="text_fz16">
                         </div>
                         <span class="active">
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Arsenal
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span>
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Atletico
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span>
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Bayern
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span>
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Chelsea
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span class="active">
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Arsenal1
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span>
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Atletico1
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span>
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Bayern1
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span>
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Chelsea1
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                     </div>
                 </div>
@@ -131,16 +130,22 @@
                     </div>
                     <div class="list text_fz16 body-click-content global-hide">
                         <span class="active">
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Завершён
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span>
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Идёт
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                         <span>
+                            <div class="check">
+                                <img src="<?=IMAGES?>icons/check.svg" alt="check">
+                            </div>
                             Ожидается
-                            <img src="<?=IMAGES?>icons/check.svg" alt="check">
                         </span>
                     </div>
                 </div>
@@ -260,7 +265,7 @@
                             <img src="<?=IMAGES?>icons/football-icon.svg" alt="Germany">
                             <span>Germany</span>
                         </div>
-                        <div class="teams-result text_fz32">—:-</div>
+                        <div class="teams-result text_fz32">—&nbsp;:&nbsp;—</div>
                         <div class="teams-item">
                             <img src="<?=IMAGES?>icons/football-icon.svg" alt="Argentina">
                             <span>Argentina</span>
@@ -269,6 +274,11 @@
                     <div class="status await">
                         <img src="<?=IMAGES?>icons/await.svg" alt="Ожидается">
                         <span>Ожидается</span>
+                    </div>
+                </div>
+                <div class="home__schedule-row">
+                    <div class="empty text_center">
+                        Нет матчей
                     </div>
                 </div>
             </div>

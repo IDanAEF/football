@@ -16,12 +16,16 @@
     <link rel="stylesheet" href="/assets/css/air-datepicker.css">
     <link rel="stylesheet" href="/assets/css/style.min.css">
     <link rel="stylesheet" href="/custom.css">
+
+    <link rel="icon" href="<?=IMAGES?>favicon.png">
+    <link rel="apple-touch-icon" href="<?=IMAGES?>favicon.png" >
+    <meta name="msapplication-TileImage" content="<?=IMAGES?>favicon.png" >
 </head>
 <body>
     <div class="page-wrap">
         <header class="header">
             <div class="container">
-                <div class="header__wrap text_fz32 text_fw900 text_ffTablon">
+                <div class="header__wrap text_fz24 text_fw900 text_ffTablon">
                     <picture>
                         <source srcset="<?=IMAGES?>header-back-mob2.png" media="(max-width: 370px)">
                         <source srcset="<?=IMAGES?>header-back-mob.png" media="(max-width: 576px)">
@@ -30,6 +34,9 @@
                     <img src="<?=IMAGES?>icons/menu.svg" alt="Меню" class="header__burger">
                     <nav class="header__nav text_upper">
                         <ul>
+                            <li>
+                                <a href="/" class="no-hover<?=CLEAR_PATH == '/' ? ' active' : ''?>">Главная</a>
+                            </li>
                             <li>
                                 <a href="/#news" class="no-hover">новости</a>
                             </li>
@@ -58,6 +65,9 @@
                 </div>
                 <nav class="header__mobile-nav text_fz48 text_ffTablon text_fw900 text_upper">
                     <ul>
+                        <li>
+                            <a href="/">Главная</a>
+                        </li>
                         <li>
                             <a href="/#news">новости</a>
                         </li>
