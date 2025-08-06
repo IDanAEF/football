@@ -207,6 +207,23 @@ const other = () => {
     } catch (e) {
         console.log(e.stack);
     }
+
+    try {
+        const filledBlock = document.querySelectorAll('.filled-block');
+
+        filledBlock.forEach(block => {
+            const blockName = block.querySelector('.filled-name'),
+                  blockList = block.querySelectorAll('.list span');
+
+            blockList.forEach(listItem => {
+                listItem.addEventListener('click', () => {
+                    blockName.textContent = listItem.textContent.trim();
+                });
+            });
+        });
+    } catch (e) {
+        console.log(e.stack);
+    }
 }
 
 export default other;

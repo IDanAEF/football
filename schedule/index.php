@@ -1,4 +1,8 @@
-<?php require '../header.php'; ?>
+<?php 
+    require '../header.php'; 
+
+    $startTime = strtotime(date('d.m.Y'));
+?>
 <main class="schedule">
     <section class="home__schedule page__block">
         <div class="container">
@@ -12,19 +16,37 @@
                     </div>
                 </div>
                 <div class="schedule__filter-item">
-                    <div class="name text_fz24 text_ffTablon body-click-target global-hide">
+                    <div class="name text_fz24 text_ffTablon body-click-target">
                         <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
                         <span>время</span>
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
-                    <div class="list text_fz16 body-click-content global-hide">
-                        <div class="input-field">
-                            <img src="<?=IMAGES?>icons/loop.svg" alt="loop">
-                            <input type="text" placeholder="От __:__" class="text_fz16 datepicker-simple only-time" readonly>
+                    <div class="list text_fz16 full body-click-content">
+                        <div class="filled-block">
+                            <div class="filled-name body-click-target global-hide">От __:__</div>
+                            <div class="list text_fz16 body-click-content global-hide">
+                                <?php
+                                    for ($i = 0; $i <= 1410; $i += 30) {
+                                        ?>
+                                        <span><?=date('H:i', $startTime + $i*60)?></span>
+                                        <?php
+                                    }
+                                ?>
+                                <span>24:00</span>
+                            </div>
                         </div>
-                        <div class="input-field">
-                            <img src="<?=IMAGES?>icons/loop.svg" alt="loop">
-                            <input type="text" placeholder="До __:__" class="text_fz16 datepicker-simple only-time" readonly>
+                        <div class="filled-block">
+                            <div class="filled-name body-click-target global-hide">До __:__</div>
+                            <div class="list text_fz16 body-click-content global-hide">
+                                <?php
+                                    for ($i = 0; $i <= 1410; $i += 30) {
+                                        ?>
+                                        <span><?=date('H:i', $startTime + $i*60)?></span>
+                                        <?php
+                                    }
+                                ?>
+                                <span>24:00</span>
+                            </div>
                         </div>
                     </div>
                 </div>

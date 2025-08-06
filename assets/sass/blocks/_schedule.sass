@@ -39,10 +39,16 @@
                 max-height: 300px
                 overflow: auto
                 z-index: 5
+                .filled-block 
+                    position: relative
+                &.full
+                    max-height: unset
+                    overflow: visible
                 &.active
                     opacity: 1
                     visibility: visible
-                span 
+                span, .filled-name 
+                    position: relative
                     display: block
                     padding: 18px 12px
                     display: flex
