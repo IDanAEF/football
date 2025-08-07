@@ -21,10 +21,10 @@
                         <span>время</span>
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
-                    <div class="list text_fz16 full body-click-content">
+                    <div class="list text_fz21 full body-click-content">
                         <div class="filled-block">
                             <div class="filled-name body-click-target global-hide">От __:__</div>
-                            <div class="list text_fz16 body-click-content global-hide">
+                            <div class="list text_fz21 body-click-content global-hide">
                                 <?php
                                     for ($i = 0; $i <= 1410; $i += 30) {
                                         ?>
@@ -37,7 +37,7 @@
                         </div>
                         <div class="filled-block">
                             <div class="filled-name body-click-target global-hide">До __:__</div>
-                            <div class="list text_fz16 body-click-content global-hide">
+                            <div class="list text_fz21 body-click-content global-hide">
                                 <?php
                                     for ($i = 0; $i <= 1410; $i += 30) {
                                         ?>
@@ -56,7 +56,7 @@
                         <span>Лига</span>
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
-                    <div class="list text_fz16 body-click-content global-hide">
+                    <div class="list text_fz21 body-click-content global-hide">
                         <span>
                             <div class="check">
                                 <img src="<?=IMAGES?>icons/check.svg" alt="check">
@@ -89,10 +89,10 @@
                         <span>команда</span>
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
-                    <div class="list text_fz16 body-click-content global-hide">
+                    <div class="list text_fz21 body-click-content global-hide">
                         <div class="input-field schedule__filter-search">
                             <img src="<?=IMAGES?>icons/loop.svg" alt="loop">
-                            <input type="text" placeholder="Поиск" class="text_fz16">
+                            <input type="text" placeholder="Поиск" class="text_fz21">
                         </div>
                         <span class="active">
                             <div class="check">
@@ -150,7 +150,7 @@
                         <span>статус</span>
                         <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                     </div>
-                    <div class="list text_fz16 body-click-content global-hide">
+                    <div class="list text_fz21 body-click-content global-hide">
                         <span class="active">
                             <div class="check">
                                 <img src="<?=IMAGES?>icons/check.svg" alt="check">
