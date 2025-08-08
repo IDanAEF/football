@@ -15,38 +15,39 @@
                         <img src="<?=IMAGES?>icons/date.svg" alt="date-icon" class="date-icon">
                     </div>
                 </div>
-                <div class="schedule__filter-item">
-                    <div class="name text_fz24 text_ffTablon body-click-target">
-                        <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
-                        <span>время</span>
-                        <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
-                    </div>
-                    <div class="list text_fz21 full body-click-content">
-                        <div class="filled-block">
-                            <div class="filled-name body-click-target global-hide">От __:__</div>
-                            <div class="list text_fz21 body-click-content global-hide">
-                                <?php
-                                    for ($i = 0; $i <= 1410; $i += 30) {
-                                        ?>
-                                        <span><?=date('H:i', $startTime + $i*60)?></span>
-                                        <?php
-                                    }
-                                ?>
-                                <span>24:00</span>
-                            </div>
+                <div class="schedule__filter-wrap">
+                    <div class="schedule__filter-item filled-block time time-line">
+                        <div class="name text_fz24 text_ffTablon body-click-target global-hide">
+                            <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
+                            <span class="filled-name">От __:__</span>
+                            <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                         </div>
-                        <div class="filled-block">
-                            <div class="filled-name body-click-target global-hide">До __:__</div>
-                            <div class="list text_fz21 body-click-content global-hide">
-                                <?php
-                                    for ($i = 0; $i <= 1410; $i += 30) {
-                                        ?>
-                                        <span><?=date('H:i', $startTime + $i*60)?></span>
-                                        <?php
-                                    }
-                                ?>
-                                <span>24:00</span>
-                            </div>
+                        <div class="list text_fz21 body-click-content global-hide">
+                            <?php
+                                for ($i = 0; $i <= 1410; $i += 30) {
+                                    ?>
+                                    <span><?=date('H:i', $startTime + $i*60)?></span>
+                                    <?php
+                                }
+                            ?>
+                            <span>24:00</span>
+                        </div>
+                    </div>
+                    <div class="schedule__filter-item filled-block time">
+                        <div class="name text_fz24 text_ffTablon body-click-target global-hide">
+                            <img src="<?=IMAGES?>filter-back.png" alt="filter-back" class="back">
+                            <span class="filled-name">До __:__</span>
+                            <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
+                        </div>
+                        <div class="list text_fz21 body-click-content global-hide">
+                            <?php
+                                for ($i = 0; $i <= 1410; $i += 30) {
+                                    ?>
+                                    <span><?=date('H:i', $startTime + $i*60)?></span>
+                                    <?php
+                                }
+                            ?>
+                            <span>24:00</span>
                         </div>
                     </div>
                 </div>

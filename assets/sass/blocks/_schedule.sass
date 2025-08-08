@@ -5,6 +5,10 @@
         align-items: center
         gap: 15px
         margin-bottom: 40px
+        &-wrap 
+            display: flex
+            align-items: center
+            gap: 15px
         &-item
             width: 256px
             position: relative
@@ -97,6 +101,7 @@
                     user-select: none
                 &.date 
                     padding: 0
+                    height: 56px
                     input 
                         position: relative
                         width: 100%
@@ -114,3 +119,10 @@
                         top: 50%
                         right: 14px
                         transform: translateY(-50%)
+            &.time 
+                width: 120px
+                .name 
+                    padding-left: 14px
+                    height: 56px
+                    .arrow
+                        display: none
