@@ -171,7 +171,7 @@ const other = () => {
         const filterLists = document.querySelectorAll('.schedule__filter-item .list');
 
         filterLists.forEach(list => {
-            const listItems = list.querySelectorAll('span')
+            const listItems = list.querySelectorAll('span'),
                   single = list.classList.contains('single');
 
             listItems.forEach(item => {

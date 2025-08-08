@@ -22,7 +22,7 @@
                             <span class="filled-name">От __:__</span>
                             <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                         </div>
-                        <div class="list text_fz21 body-click-content global-hide">
+                        <div class="list text_fz21 body-click-content global-hide single">
                             <?php
                                 for ($i = 0; $i <= 1410; $i += 30) {
                                     ?>
@@ -39,7 +39,7 @@
                             <span class="filled-name">До __:__</span>
                             <img src="<?=IMAGES?>icons/arrow-down.svg" alt="arrow-down" class="arrow">
                         </div>
-                        <div class="list text_fz21 body-click-content global-hide">
+                        <div class="list text_fz21 body-click-content global-hide single">
                             <?php
                                 for ($i = 0; $i <= 1410; $i += 30) {
                                     ?>
